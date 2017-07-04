@@ -1,7 +1,7 @@
 #!/bin/bash
 app=taiga
 app_port=8010
-domain=host.local
+domain=$YNH_APP_ARG_DOMAIN
 path=/$app
 
 start_point=$(pwd)
