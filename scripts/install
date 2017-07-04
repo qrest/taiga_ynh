@@ -1,8 +1,11 @@
 #!/bin/bash
-app=taiga
+app=$YNH_APP_INSTANCE_NAME
 app_port=8010
 domain=$YNH_APP_ARG_DOMAIN
-path=/$app
+path=$YNH_APP_ARG_PATH
+
+admin=$YNH_APP_ARG_ADMIN
+is_public=$YNH_APP_ARG_IS_PUBLIC
 
 start_point=$(pwd)
 install_path=/var/www/$app
@@ -39,6 +42,9 @@ sudo yunohost app checkport 5555 \
 
 sudo yunohost app checkport 5556 \
     || (echo "Port not available: 5556" && exit 1)
+
+ynh_app_setting_set "$app" admin "$admin"
+ynh_app_setting_set "$app" is_public "$is_public"
 
 sudo apt-get install -y build-essential binutils-doc autoconf flex bison libjpeg-dev
 sudo apt-get install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev
