@@ -11,7 +11,6 @@ git clone https://github.com/taigaio/taiga-back.git taiga-back
 cd taiga-back
 git checkout stable
 
-source /usr/local/bin/virtualenvwrapper.sh
 mkvirtualenv -p /usr/bin/python3.4 taiga
 pip install -r requirements.txt
 pip install taiga-contrib-ldap-auth
