@@ -1,15 +1,15 @@
 from .common import *
 
 #DEBUG = False
-MEDIA_URL = "https://host.local/taiga/media/"
-STATIC_URL = "https://host.local/taiga/static/"
-ADMIN_MEDIA_PREFIX = "https://host.local/taiga/static/admin/"
+MEDIA_URL = "https://malapads.ddns.net/taiga/media/"
+STATIC_URL = "https://malapads.ddns.net/taiga/static/"
+ADMIN_MEDIA_PREFIX = "https://malapads.ddns.net/taiga/static/admin/"
 SITES["front"]["scheme"] = "https"
-SITES["front"]["domain"] = "host.local"
+SITES["front"]["domain"] = "malapads.ddns.net"
 
 
 ADMINS = (
-   ("less", "less@host.local"),
+   ("less", "less@malapads.ddns.net"),
 )
 
 DATABASES = {
