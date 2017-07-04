@@ -1,6 +1,6 @@
 {
-    "api": "https://host.local/taiga/v1/",
-    "eventsUrl": "ws://host.local/taiga/events",
+    "api": "https://malapads.ddns.net/taiga/v1/",
+    "eventsUrl": "ws://malapads.ddns.net/taiga/events",
     "debug": "false",
     "publicRegisterEnabled": true,
     "feedbackEnabled": true,
